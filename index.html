@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maisora Wear — Tampil Kekinian, Sopan & Berwibawa | Bandar Lampung</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Modern Clean Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        cream: {
+                            50: '#FDFBF9',
+                            100: '#F8F3EE',
+                            200: '#EFE5DC',
+                            300: '#E2D2C3',
+                        },
+                        terracotta: {
+                            400: '#D47A63',
+                            500: '#C26149',
+                            600: '#A64D37',
+                            700: '#873B29',
+                        },
+                        dusty: {
+                            100: '#F7ECEA',
+                            200: '#EDD5D0',
+                            400: '#D49E95',
+                            500: '#BE8075',
+                        },
+                        espresso: {
+                            800: '#3D2E2A',
+                            900: '#261C19',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cream-50 text-espresso-900 font-sans antialiased selection:bg-terracotta-500 selection:text-white overflow-x-hidden">
+
+    <!-- 1. NAVBAR -->
+    <header class="sticky top-0 z-40 bg-cream-50/90 backdrop-blur-md border-b border-cream-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-2.5 group">
+                    <div class="w-10 h-10 rounded-full bg-terracotta-500 text-cream-50 flex items-center justify-center font-serif text-2xl font-bold shadow-sm group-hover:bg-terracotta-600 transition">
+                        M
+                    </div>
+                    <div>
+                        <span class="font-serif text-2xl font-bold tracking-tight text-espresso-900 block leading-none">Maisora Wear</span>
+                        <span class="text-[11px] uppercase tracking-[0.2em] text-terracotta-600 font-medium">Bandar Lampung</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-espresso-800">
+                    <a href="#masalah" class="hover:text-terracotta-500 transition">Filosofi</a>
+                    <a href="#penawaran" class="hover:text-terracotta-500 transition">Keunggulan</a>
+                    <a href="#lookbook" class="hover:text-terracotta-500 transition">Lookbook</a>
+                    <a href="#testimoni" class="hover:text-terracotta-500 transition">Testimoni</a>
+                    <a href="#harga" class="hover:text-terracotta-500 transition">Paket Harga</a>
+                    <a href="#faq" class="hover:text-terracotta-500 transition">FAQ</a>
+                </nav>
+
+                <!-- CTA Button & Mobile Menu Trigger -->
+                <div class="flex items-center gap-3">
+                    <a href="#harga" class="bg-terracotta-500 hover:bg-terracotta-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md shadow-terracotta-500/20 transition transform hover:-translate-y-0.5">
+                        Pesan Sekarang
+                    </a>
+                    <button id="mobile-menu-btn" aria-label="Buka Menu" class="md:hidden p-2.5 rounded-xl text-espresso-800 hover:bg-cream-200 transition">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cream-100 border-b border-cream-200 px-4 pt-3 pb-6 space-y-2">
+            <a href="#masalah" class="block px-4 py-2.5 rounded-xl text-base font-medium text-espresso-800 hover:bg-cream-200">Filosofi & Cerita</a>
+            <a href="#penawaran" class="block px-4 py-2.5 rounded-xl text-base font-medium text-espresso-800 hover:bg-cream-200">Keunggulan Produk</a>
+            <a href="#lookbook" class="block px-4 py-2.5 rounded-xl text-base font-medium text-espresso-800 hover:bg-cream-200">Koleksi Lookbook</a>
+            <a href="#testimoni" class="block px-4 py-2.5 rounded-xl text-base font-medium text-espresso-800 hover:bg-cream-200">Kata Pelanggan</a>
+            <a href="#harga" class="block px-4 py-2.5 rounded-xl text-base font-medium text-espresso-800 hover:bg-cream-200">Paket Harga</a>
+            <a href="#faq" class="block px-4 py-2.5 rounded-xl text-base font-medium text-espresso-800 hover:bg-cream-200">Pertanyaan (FAQ)</a>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION & HEADLINE -->
+    <section class="relative overflow-hidden pt-10 pb-16 lg:pt-20 lg:pb-24 bg-gradient-to-b from-cream-100 via-cream-50 to-cream-50">
+        <!-- Decorative Soft Blob -->
+        <div class="absolute top-0 right-0 -mr-24 -mt-24 w-96 h-96 rounded-full bg-dusty-200/40 blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -ml-24 -mb-24 w-80 h-80 rounded-full bg-terracotta-400/10 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Copywriting -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-dusty-100 border border-dusty-200 text-terracotta-700 text-xs sm:text-sm font-semibold tracking-wide">
+                        <span class="w-2 h-2 rounded-full bg-terracotta-500 animate-pulse"></span>
+                        Local Pride Fashion • Bandar Lampung
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-espresso-900 leading-[1.12]">
+                        Tampil Kekinian &amp; Berwibawa <span class="italic text-terracotta-500 font-semibold">Tanpa Harus Boros</span> Beli Baju Baru Setiap Pekan
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-espresso-800/80 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Koleksi pakaian <em>versatile</em> berkualitas premium dari Bandar Lampung. Dirancang khusus untuk pelajar, mahasiswi, hingga wanita karir muda yang ingin tampil rapi, sopan, nyaman seharian, dan mudah di-<em>mix &amp; match</em> dengan harga tetap ramah di kantong.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#harga" class="w-full sm:w-auto px-8 py-4 rounded-full bg-terracotta-500 hover:bg-terracotta-600 text-white font-semibold text-base shadow-lg shadow-terracotta-500/25 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                            <span>Lihat Paket Hemat</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#lookbook" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white hover:bg-cream-100 text-espresso-900 border border-cream-300 font-semibold text-base transition flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-images text-terracotta-500"></i>
+                            <span>Eksplor Lookbook</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Micro-Badges -->
+                    <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-xs sm:text-sm text-espresso-800/75 font-medium">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-terracotta-500"></i> Bahan Adem &amp; Tidak Menerawang</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-terracotta-500"></i> Jahitan Butik Rapi</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-terracotta-500"></i> Garansi Tukar Ukuran</span>
+                    </div>
+                </div>
+
+                <!-- Right Editorial Image Frame -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Main Image -->
+                        <div class="rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] bg-cream-200">
+                            <img 
+                                src="https://images.unsplash.com/photo-1589465885857-44edb59bbff2?auto=format&fit=crop&w=900&q=85" 
+                                onerror="this.onerror=null;this.src='https://placehold.co/600x750/EFE5DC/3D2E2A?text=Maisora+Wear+Collection';"
+                                alt="Wanita muda mengenakan busana smart casual elegan Maisora Wear" 
+                                class="w-full h-full object-cover hover:scale-105 transition duration-700"
+                            >
+                        </div>
+
+                        <!-- Floating Card 1 -->
+                        <div class="absolute -bottom-5 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-cream-200 max-w-[220px]">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-dusty-100 text-terracotta-600 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold text-espresso-900">1 Baju = 3+ Gaya</p>
+                                    <p class="text-[11px] text-espresso-800/70">Mudah dipadukan untuk kuliah, ngantor &amp; cafe</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Card 2 -->
+                        <div class="hidden sm:flex absolute top-6 -right-4 bg-espresso-900 text-cream-50 px-4 py-2.5 rounded-2xl shadow-lg items-center gap-2">
+                            <i class="fa-solid fa-star text-amber-400 text-xs"></i>
+                            <span class="text-xs font-semibold">4.9/5 Rating Pelanggan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. MENUNJUKKAN ANGKA (STATS / SOCIAL PROOF NUMBERS) -->
+    <section class="py-10 bg-espresso-900 text-cream-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center divide-y sm:divide-y-0 sm:divide-x divide-cream-50/15">
+                <div class="p-4">
+                    <p class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-dusty-400">16–28 Thn</p>
+                    <p class="text-xs sm:text-sm text-cream-200 mt-1.5 font-medium">Segmen Gaya Aktif (Pelajar, Mahasiswi &amp; Pekerja Muda)</p>
+                </div>
+                <div class="p-4">
+                    <p class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-dusty-400">7,4%</p>
+                    <p class="text-xs sm:text-sm text-cream-200 mt-1.5 font-medium">Kontribusi Ekonomi Kreatif Nasional yang Kami Dukung</p>
+                </div>
+                <div class="p-4">
+                    <p class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-dusty-400">3-in-1</p>
+                    <p class="text-xs sm:text-sm text-cream-200 mt-1.5 font-medium">Konsep Mix &amp; Match Serbaguna dalam Satu Potong Pakaian</p>
+                </div>
+                <div class="p-4">
+                    <p class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-dusty-400">100%</p>
+                    <p class="text-xs sm:text-sm text-cream-200 mt-1.5 font-medium">Jaminan Kualitas Bahan Awet &amp; Bukan Sekali Pakai</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. MASALAH ATAU SEBUAH PERTANYAAN (PROBLEM & AGITATION) -->
+    <section id="masalah" class="py-16 lg:py-24 bg-cream-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-terracotta-600">Apakah Kamu Merasakan Ini?</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso-900 mt-2">
+                    Lemari Penuh Baju, Tapi Selalu Bingung Mau Pakai Apa Setiap Pagi?
+                </h2>
+                <p class="text-espresso-800/75 mt-4 text-base sm:text-lg">
+                    Banyak anak muda dan wanita karir terjebak siklus belanja impulsif demi gengsi, namun justru kecewa saat baju dipakai.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Problem 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-cream-200 shadow-sm hover:shadow-md transition relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-2xl bg-dusty-100 text-terracotta-600 flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-espresso-900 mb-3">
+                        "Beli baju murah, tapi kualitasnya hanya layak sekali pakai?"
+                    </h3>
+                    <p class="text-sm text-espresso-800/80 leading-relaxed">
+                        Baru dicuci dua kali, jahitan sudah lepas, warna memudar, atau bahan terasa panas dan gerah saat dipakai beraktivitas seharian dari pagi sampai sore.
+                    </p>
+                </div>
+
+                <!-- Problem 2 -->
+                <div class="bg-white p-8 rounded-3xl border border-cream-200 shadow-sm hover:shadow-md transition relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-2xl bg-dusty-100 text-terracotta-600 flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-espresso-900 mb-3">
+                        "Terjebak belanja impulsif demi gengsi &amp; tren sesaat?"
+                    </h3>
+                    <p class="text-sm text-espresso-800/80 leading-relaxed">
+                        Membeli pakaian dengan model terlalu ramai sehingga sulit dipadupadankan. Akhirnya baju hanya menumpuk di lemari karena terasa membosankan jika dipakai ulang.
+                    </p>
+                </div>
+
+                <!-- Problem 3 -->
+                <div class="bg-white p-8 rounded-3xl border border-cream-200 shadow-sm hover:shadow-md transition relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-2xl bg-dusty-100 text-terracotta-600 flex items-center justify-center text-xl mb-5">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-espresso-900 mb-3">
+                        "Sulit cari outfit yang sopan, rapi, namun tetap kekinian?"
+                    </h3>
+                    <p class="text-sm text-espresso-800/80 leading-relaxed">
+                        Butuh tampilan yang berwibawa untuk presentasi kuliah, rapat di kantor, atau bertemu klien, tapi tetap terlihat muda dan santai saat lanjut nongkrong di kafe.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. DESKRIPSI PENAWARAN (SOLUTION & VALUE PROPOSITION) -->
+    <section id="penawaran" class="py-16 lg:py-24 bg-cream-100 border-y border-cream-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Image Collage -->
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="rounded-3xl overflow-hidden shadow-lg aspect-[3/4] bg-cream-200">
+                            <img 
+                                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80" 
+                                onerror="this.onerror=null;this.src='https://placehold.co/500x650/EDD5D0/3D2E2A?text=Versatile+Style';"
+                                alt="Gaya smart casual wanita modern" 
+                                class="w-full h-full object-cover"
+                            >
+                        </div>
+                        <div class="bg-terracotta-500 text-white p-5 rounded-3xl shadow-md">
+                            <p class="font-serif text-xl font-bold">Kreatif Tanpa Boros</p>
+                            <p class="text-xs text-cream-100 mt-1">Padukan 1 atasan Maisora dengan rok, kulot, atau blazer untuk tampilan yang selalu terlihat baru.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <div class="bg-white p-5 rounded-3xl shadow-md border border-cream-200">
+                            <p class="font-serif text-xl font-bold text-espresso-900">Karya Lokal Berkualitas</p>
+                            <p class="text-xs text-espresso-800/75 mt-1">Diproduksi dengan kontrol kualitas ketat di Bandar Lampung untuk mendukung UMKM fashion kreatif Indonesia.</p>
+                        </div>
+                        <div class="rounded-3xl overflow-hidden shadow-lg aspect-[3/4] bg-cream-200">
+                            <img 
+                                src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&w=700&q=80" 
+                                onerror="this.onerror=null;this.src='https://placehold.co/500x650/EFE5DC/3D2E2A?text=Modest+Chic';"
+                                alt="Detail tekstur kain nyaman Maisora Wear" 
+                                class="w-full h-full object-cover"
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solution Value Proposition -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="inline-block px-3.5 py-1 rounded-full bg-terracotta-500/10 text-terracotta-600 text-xs font-bold uppercase tracking-wider">
+                        Solusi Cerdas Berpakaian
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso-900 leading-tight">
+                        Maisora Wear: Pakaian <span class="italic text-terracotta-500">Versatile</span> yang Membuatmu Selalu Terlihat Baru &amp; Berwibawa
+                    </h2>
+                    <p class="text-espresso-800/80 text-base leading-relaxed">
+                        Kami percaya kamu tidak perlu membeli baju baru setiap minggu untuk tampil memukau. Maisora Wear menghadirkan koleksi <em>capsule fashion</em> dengan potongan <em>timeless</em>, warna <em>earth-tone</em> yang elegan, serta material pilihan yang jatuh indah di badan.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-terracotta-500 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-layer-group text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-espresso-900 text-base">Desain Serbaguna (Effortless Mix &amp; Match)</h4>
+                                <p class="text-sm text-espresso-800/75 mt-0.5">Siluet bersih dan palet warna netral yang mudah dikombinasikan dengan item apa pun di lemarimu—cocok untuk hijab maupun non-hijab.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-terracotta-500 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-feather text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-espresso-900 text-base">Nyaman Dipakai Seharian &amp; Tahan Lama</h4>
+                                <p class="text-sm text-espresso-800/75 mt-0.5">Menggunakan kain katun premium, linen blend, dan crepe lembut yang menyerap keringat, tidak mudah kusut, serta awet dicuci berkali-kali.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-terracotta-500 text-white flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-award text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-espresso-900 text-base">Sopan, Rapi &amp; Meningkatkan Rasa Percaya Diri</h4>
+                                <p class="text-sm text-espresso-800/75 mt-0.5">Memberikan kesan profesional dan berkelas saat bekerja di instansi/kantor maupun kuliah, namun tetap santai saat bersosialisasi di kafe.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="#harga" class="inline-flex items-center gap-2 bg-espresso-900 hover:bg-espresso-800 text-cream-50 font-semibold px-7 py-3.5 rounded-full transition shadow-md">
+                            <span>Miliki Koleksi Maisora Sekarang</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. GALERI GAMBAR (LOOKBOOK / KOLEKSI PRODUK) -->
+    <section id="lookbook" class="py-16 lg:py-24 bg-cream-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-[0.2em] text-terracotta-600">Inspirasi Gaya Harian</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso-900 mt-2">
+                        Lookbook Koleksi Maisora Wear
+                    </h2>
+                </div>
+                <p class="text-sm sm:text-base text-espresso-800/75 max-w-md">
+                    Satu koleksi dengan beragam karakter gaya. Temukan kombinasi terbaik untuk aktivitas harianmu.
+                </p>
+            </div>
+
+            <!-- Lookbook Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1: Smart Casual Ngantor -->
+                <div class="group bg-white rounded-3xl overflow-hidden border border-cream-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative aspect-[4/5] overflow-hidden bg-cream-200">
+                        <img 
+                            src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=800&q=80" 
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x750/EFE5DC/3D2E2A?text=Smart+Casual+Ngantor';"
+                            alt="Smart Casual Ngantor Maisora Wear" 
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                        >
+                        <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-espresso-900 text-xs font-bold px-3.5 py-1.5 rounded-full">
+                            Best Seller • Office Look
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-espresso-900">Smart Casual Ngantor</h3>
+                            <p class="text-sm text-espresso-800/75 mt-2 leading-relaxed">
+                                Perpaduan tunik/blouse potongan rapi dengan celana kulot <em>high-waist</em> berbahan jatuh. Memberikan aura wanita karir yang sopan, berwibawa, dan bersih.
+                            </p>
+                        </div>
+                        <div class="mt-5 pt-4 border-t border-cream-200 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-terracotta-600">Tersedia Size S – XXL</span>
+                            <button onclick="openOrderModal('Smart Casual Ngantor Set', 'Rp 239.000')" class="text-sm font-bold text-espresso-900 hover:text-terracotta-500 flex items-center gap-1 transition">
+                                Pilih Gaya <i class="fa-solid fa-chevron-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Kuliah & Hangout di Cafe -->
+                <div class="group bg-white rounded-3xl overflow-hidden border border-cream-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col">
+                    <div class="relative aspect-[4/5] overflow-hidden bg-cream-200">
+                        <img 
+                            src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80" 
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x750/EDD5D0/3D2E2A?text=Kuliah+%26+Cafe+Look';"
+                            alt="Kuliah dan Hangout di Cafe Maisora Wear" 
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                        >
+                        <span class="absolute top-4 left-4 bg-terracotta-500 text-white text-xs font-bold px-3.5 py-1.5 rounded-full">
+                            Favorit Mahasiswi
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-espresso-900">Kuliah &amp; Hangout di Cafe</h3>
+                            <p class="text-sm text-espresso-800/75 mt-2 leading-relaxed">
+                                Kemeja linen bertekstur lembut dengan aksen lengan manis. Nyaman untuk jadwal kelas padat sekaligus tetap <em>aesthetic</em> saat foto OOTD di kafe favorit.
+                            </p>
+                        </div>
+                        <div class="mt-5 pt-4 border-t border-cream-200 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-terracotta-600">4 Pilihan Warna Earth-Tone</span>
+                            <button onclick="openOrderModal('Daily Chic Top', 'Rp 129.000')" class="text-sm font-bold text-espresso-900 hover:text-terracotta-500 flex items-center gap-1 transition">
+                                Pilih Gaya <i class="fa-solid fa-chevron-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Effortless Chic -->
+                <div class="group bg-white rounded-3xl overflow-hidden border border-cream-200 shadow-sm hover:shadow-xl transition duration-300 flex flex-col sm:col-span-2 lg:col-span-1">
+                    <div class="relative aspect-[4/5] overflow-hidden bg-cream-200">
+                        <img 
+                            src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=800&q=80" 
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x750/E2D2C3/3D2E2A?text=Effortless+Chic';"
+                            alt="Effortless Chic Capsule Maisora Wear" 
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                        >
+                        <span class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-espresso-900 text-xs font-bold px-3.5 py-1.5 rounded-full">
+                            3-in-1 Mix &amp; Match
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-espresso-900">Effortless Chic</h3>
+                            <p class="text-sm text-espresso-800/75 mt-2 leading-relaxed">
+                                <em>Outer</em> ringan serbaguna yang bisa dijadikan luaran formal maupun kasual. Solusi instan mengubah tampilan lama menjadi terlihat segar dan modis dalam hitungan detik.
+                            </p>
+                        </div>
+                        <div class="mt-5 pt-4 border-t border-cream-200 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-terracotta-600">Anti Kusut &amp; Ringan</span>
+                            <button onclick="openOrderModal('Capsule Wardrobe 3 Pcs', 'Rp 349.000')" class="text-sm font-bold text-espresso-900 hover:text-terracotta-500 flex items-center gap-1 transition">
+                                Pilih Gaya <i class="fa-solid fa-chevron-right text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. VIDEO SHOWCASE -->
+    <section class="py-16 lg:py-24 bg-dusty-100/60 border-y border-dusty-200/70">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-terracotta-600">Behind The Seams</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso-900 mt-2">
+                    Lihat Lebih Dekat Kualitas Bahan &amp; Detail Jahitan Maisora
+                </h2>
+                <p class="text-sm sm:text-base text-espresso-800/75 mt-3">
+                    Saksikan bagaimana tekstur kain kami bergerak anggun, tidak menerawang, dan mudah dipadukan dalam berbagai suasana.
+                </p>
+            </div>
+
+            <!-- Interactive Stylish Video Showcase Card -->
+            <div class="relative rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white bg-espresso-900 aspect-video max-w-4xl mx-auto group">
+                <!-- Video Poster / Interactive Player Container -->
+                <div id="video-poster" class="relative w-full h-full cursor-pointer" onclick="playShowcaseVideo()">
+                    <img 
+                        src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1400&q=85" 
+                        onerror="this.onerror=null;this.src='https://placehold.co/1200x675/3D2E2A/FDFBF9?text=Maisora+Wear+Lookbook+Film';"
+                        alt="Video Lookbook dan Kualitas Jahitan Maisora Wear" 
+                        class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-700"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-espresso-900/80 via-espresso-900/30 to-transparent"></div>
+                    
+                    <!-- Center Play Button -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
+                        <button type="button" aria-label="Putar Video Lookbook" class="w-20 h-20 rounded-full bg-terracotta-500 text-white flex items-center justify-center shadow-2xl shadow-terracotta-500/50 group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-play text-2xl ml-1"></i>
+                        </button>
+                        <span class="mt-4 px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-md text-white text-xs sm:text-sm font-medium border border-white/30">
+                            Putar Lookbook &amp; Detail Bahan (01:15)
+                        </span>
+                    </div>
+
+                    <!-- Bottom Caption inside Video Frame -->
+                    <div class="absolute bottom-5 left-6 right-6 flex flex-wrap items-center justify-between text-white/90 text-xs sm:text-sm gap-2">
+                        <span class="font-medium"><i class="fa-solid fa-location-dot text-terracotta-400 mr-1.5"></i>Studio Produksi Maisora Wear, Bandar Lampung</span>
+                        <span class="bg-espresso-900/70 px-3 py-1 rounded-full">HD 1080p • Editorial Reel</span>
+                    </div>
+                </div>
+
+                <!-- Embedded Video Player (Revealed on Click) -->
+                <div id="video-embed-container" class="hidden w-full h-full bg-black">
+                    <video id="fashion-video" class="w-full h-full object-cover" controls playsinline>
+                        <source src="https://assets.mixkit.co/videos/preview/mixkit-woman-modeling-in-front-of-a-white-background-34423-large.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung pemutar video HTML5.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. TESTIMONI PELANGGAN -->
+    <section id="testimoni" class="py-16 lg:py-24 bg-cream-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-terracotta-600">Cerita Mereka</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso-900 mt-2">
+                    Dipercaya Pelajar, Mahasiswi &amp; Wanita Karir Muda
+                </h2>
+                <p class="text-espresso-800/75 mt-3 text-base">
+                    Pengalaman nyata pelanggan yang berhasil tampil rapi, cantik, dan percaya diri bersama Maisora Wear.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1: Bella (Persona Utama dari Dokumen) -->
+                <div class="bg-white p-8 rounded-3xl border border-cream-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-espresso-800/85 text-sm sm:text-base leading-relaxed italic">
+                            "Sebagai content creator &amp; pekerja muda, aku butuh outfit yang fotogenik di kamera TikTok tapi tetap sopan buat meeting. Baju dari Maisora Wear gampang banget di-mix &amp; match, jadi kelihatan selalu pakai baju baru tanpa bikin kantong jebol!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 mt-6 pt-5 border-t border-cream-200">
+                        <img 
+                            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" 
+                            onerror="this.onerror=null;this.src='https://placehold.co/100x100/EDD5D0/3D2E2A?text=B';"
+                            alt="Foto Bella" 
+                            class="w-12 h-12 rounded-full object-cover border-2 border-dusty-200"
+                        >
+                        <div>
+                            <p class="font-bold text-espresso-900 text-sm">Bella, 23 Tahun</p>
+                            <p class="text-xs text-terracotta-600 font-medium">Influencer &amp; Pekerja Muda</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2: Pegawai Instansi -->
+                <div class="bg-white p-8 rounded-3xl border border-cream-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-espresso-800/85 text-sm sm:text-base leading-relaxed italic">
+                            "Kerja di instansi pemerintah menuntut aku tampil rapi, sopan, dan berwibawa setiap hari. Koleksi Maisora bahannya adem banget, nggak gampang lecek meski dipakai seharian, dan potongannya bikin terlihat bersih serta elegan."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 mt-6 pt-5 border-t border-cream-200">
+                        <img 
+                            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" 
+                            onerror="this.onerror=null;this.src='https://placehold.co/100x100/EFE5DC/3D2E2A?text=N';"
+                            alt="Foto Nabila" 
+                            class="w-12 h-12 rounded-full object-cover border-2 border-dusty-200"
+                        >
+                        <div>
+                            <p class="font-bold text-espresso-900 text-sm">Nabila, 26 Tahun</p>
+                            <p class="text-xs text-terracotta-600 font-medium">Pegawai Instansi • Bandar Lampung</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3: Mahasiswi -->
+                <div class="bg-white p-8 rounded-3xl border border-cream-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-espresso-800/85 text-sm sm:text-base leading-relaxed italic">
+                            "Dulu sering beli baju murah online tapi cuma kepakai sekali karena bahannya tipis. Pas coba paket bundling Maisora Wear, harganya tetap ramah kantong mahasiswi tapi jahitannya rapi banget kayak butik mahal!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3.5 mt-6 pt-5 border-t border-cream-200">
+                        <img 
+                            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80" 
+                            onerror="this.onerror=null;this.src='https://placehold.co/100x100/E2D2C3/3D2E2A?text=A';"
+                            alt="Foto Alya" 
+                            class="w-12 h-12 rounded-full object-cover border-2 border-dusty-200"
+                        >
+                        <div>
+                            <p class="font-bold text-espresso-900 text-sm">Alya, 20 Tahun</p>
+                            <p class="text-xs text-terracotta-600 font-medium">Mahasiswi • Lampung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. HARGA (PRICING / PAKET PENAWARAN) -->
+    <section id="harga" class="py-16 lg:py-24 bg-cream-100 border-t border-cream-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-terracotta-600">Penawaran Spesial</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso-900 mt-2">
+                    Investasi Gaya Terbaik dengan Harga Terjangkau
+                </h2>
+                <p class="text-espresso-800/75 mt-3 text-base">
+                    Pilih paket sesuai kebutuhanmu. Lebih hemat dengan paket <em>bundling mix &amp; match</em> untuk tampilan baru sepanjang pekan.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                <!-- Paket 1: Daily Chic -->
+                <div class="bg-white rounded-3xl p-8 border border-cream-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full bg-cream-100 text-espresso-800 text-xs font-semibold">
+                            Paket Satuan
+                        </span>
+                        <h3 class="font-serif text-3xl font-bold text-espresso-900 mt-4">Daily Chic</h3>
+                        <p class="text-sm text-espresso-800/70 mt-1">Cocok untuk mencoba kualitas bahan &amp; potongan khas Maisora Wear.</p>
+                        
+                        <div class="my-6 pb-6 border-b border-cream-200">
+                            <span class="text-sm text-espresso-800/50 line-through block">Rp 159.000</span>
+                            <div class="flex items-baseline gap-1 mt-1">
+                                <span class="font-serif text-4xl font-bold text-espresso-900">Rp 129.000</span>
+                                <span class="text-xs text-espresso-800/60">/ pcs</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-espresso-800/85">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-terracotta-500"></i> 1 Potong Atasan / Tunik Pilihan</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-terracotta-500"></i> Bebas Pilih Warna Earth-Tone</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-terracotta-500"></i> Kemasan Eksklusif &amp; Kartu Perawatan</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-terracotta-500"></i> Garansi Tukar Ukuran 7 Hari</li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openOrderModal('Paket Satuan: Daily Chic', 'Rp 129.000')" class="mt-8 w-full py-3.5 px-6 rounded-full border-2 border-espresso-900 text-espresso-900 hover:bg-espresso-900 hover:text-white font-semibold text-sm transition">
+                        Pesan Daily Chic
+                    </button>
+                </div>
+
+                <!-- Paket 2: Mix & Match Set (POPULAR) -->
+                <div class="bg-espresso-900 text-cream-50 rounded-3xl p-8 border-2 border-terracotta-500 shadow-2xl relative flex flex-col justify-between lg:-translate-y-4">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-terracotta-500 text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-md">
+                        ★ Paling Laris • Hemat Rp 49rb
+                    </div>
+
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full bg-white/10 text-dusty-200 text-xs font-semibold mt-2">
+                            Paket Bundling 2 Pcs
+                        </span>
+                        <h3 class="font-serif text-3xl font-bold text-white mt-4">Mix &amp; Match Set</h3>
+                        <p class="text-sm text-cream-200/80 mt-1">Kombinasi atasan &amp; bawahan/outer untuk 4+ variasi gaya kuliah &amp; ngantor.</p>
+                        
+                        <div class="my-6 pb-6 border-b border-white/15">
+                            <span class="text-sm text-cream-200/50 line-through block">Rp 288.000</span>
+                            <div class="flex items-baseline gap-1 mt-1">
+                                <span class="font-serif text-4xl sm:text-5xl font-bold text-dusty-400">Rp 239.000</span>
+                                <span class="text-xs text-cream-200/70">/ set</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-cream-100">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-terracotta-400"></i> 1 Atasan Versatile + 1 Kulot / Outer</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-terracotta-400"></i> Gratis E-Lookbook Panduan 6 Gaya</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-terracotta-400"></i> Prioritas Pengiriman dari Bandar Lampung</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-terracotta-400"></i> Subsidi Ongkir Hingga Rp 15.000</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-terracotta-400"></i> Garansi Tukar Ukuran &amp; Kualitas 100%</li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openOrderModal('Paket Bundling: Mix & Match Set', 'Rp 239.000')" class="mt-8 w-full py-4 px-6 rounded-full bg-terracotta-500 hover:bg-terracotta-600 text-white font-bold text-sm shadow-lg shadow-terracotta-500/30 transition">
+                        Ambil Promo Mix &amp; Match
+                    </button>
+                </div>
+
+                <!-- Paket 3: Capsule Wardrobe 3 Pcs -->
+                <div class="bg-white rounded-3xl p-8 border border-cream-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full bg-dusty-100 text-terracotta-700 text-xs font-semibold">
+                            Paket Lengkap 3 Pcs
+                        </span>
+                        <h3 class="font-serif text-3xl font-bold text-espresso-900 mt-4">Capsule Wardrobe</h3>
+                        <p class="text-sm text-espresso-800/70 mt-1">Solusi lemari anti-bingung untuk tampil beda &amp; berwibawa sepanjang minggu.</p>
+                        
+                        <div class="my-6 pb-6 border-b border-cream-200">
+                            <span class="text-sm text-espresso-800/50 line-through block">Rp 435.000</span>
+                            <div class="flex items-baseline gap-1 mt-1">
+                                <span class="font-serif text-4xl font-bold text-espresso-900">Rp 349.000</span>
+                                <span class="text-xs text-espresso-800/60">/ 3 pcs</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-espresso-800/85">
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-terracotta-500"></i> Bebas Pilih 3 Item (Atasan, Outer, Bawahan)</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-terracotta-500"></i> Hingga 9 Kombinasi Outfit Berbeda</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-terracotta-500"></i> Bonus Scrunchie / Inner Hijab Premium</li>
+                            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-terracotta-500"></i> Gratis Ongkir Wilayah Lampung &amp; Jabodetabek</li>
+                        </ul>
+                    </div>
+
+                    <button onclick="openOrderModal('Paket Capsule Wardrobe 3 Pcs', 'Rp 349.000')" class="mt-8 w-full py-3.5 px-6 rounded-full border-2 border-espresso-900 text-espresso-900 hover:bg-espresso-900 hover:text-white font-semibold text-sm transition">
+                        Pesan Capsule Wardrobe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. GARANSI (RISK REVERSAL GUARANTEE) -->
+    <section class="py-14 bg-cream-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-dusty-100 via-cream-100 to-dusty-100 rounded-[2.25rem] p-8 sm:p-12 border border-dusty-200 shadow-sm flex flex-col md:flex-row items-center gap-8">
+                <!-- Shield Emblem -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white shadow-lg border-2 border-terracotta-400 flex flex-col items-center justify-center shrink-0 text-center p-2">
+                    <i class="fa-solid fa-shield-heart text-3xl text-terracotta-500"></i>
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider text-espresso-900 mt-1">100% Aman</span>
+                </div>
+
+                <div class="text-center md:text-left space-y-2">
+                    <span class="text-xs font-bold uppercase tracking-widest text-terracotta-600">Komitmen Kualitas Maisora Wear</span>
+                    <h3 class="font-serif text-2xl sm:text-3xl font-bold text-espresso-900">
+                        Garansi 100% Bebas Khawatir — Tukar Ukuran Gratis &amp; Jaminan Kualitas Bahan Bukan Sekali Pakai (7 Hari Garansi Retur)
+                    </h3>
+                    <p class="text-sm sm:text-base text-espresso-800/80 leading-relaxed">
+                        Takut ukuran kurang pas saat belanja online? Atau khawatir kualitas kain tidak sesuai ekspektasi? Jika produk yang kamu terima kekecilan, kebesaran, atau terdapat cacat jahitan, tim kami di Bandar Lampung siap menggantinya <strong>100% GRATIS tanpa ribet</strong> dalam 7 hari setelah paket diterima.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. PERTANYAAN YANG SERING DIAJUKAN (FAQ ACCORDION) -->
+    <section id="faq" class="py-16 lg:py-24 bg-cream-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-[0.2em] text-terracotta-600">Pusat Bantuan</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso-900 mt-2">
+                    Pertanyaan yang Sering Diajukan (FAQ)
+                </h2>
+                <p class="text-sm sm:text-base text-espresso-800/75 mt-2">
+                    Semua informasi yang perlu kamu ketahui sebelum memesan koleksi Maisora Wear.
+                </p>
+            </div>
+
+            <div class="space-y-4" id="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-2xl border border-cream-200 overflow-hidden">
+                    <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-espresso-900 hover:text-terracotta-600 transition">
+                        <span>Apa jenis bahan yang digunakan Maisora Wear? Apakah panas atau menerawang?</span>
+                        <i class="fa-solid fa-plus text-terracotta-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-sm text-espresso-800/80 leading-relaxed border-t border-cream-100 pt-3">
+                        Kami menggunakan kombinasi material pilihan seperti <em>Cotton Combed Premium, Linen Rami Halus, dan Cey Airflow/Crepe</em> dengan gramasi tebal yang pas. Bahannya sangat adem, menyerap keringat untuk iklim tropis Indonesia, jatuh elegan saat dipakai, dan <strong>tidak menerawang</strong> sehingga aman untuk pengguna hijab maupun non-hijab.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-2xl border border-cream-200 overflow-hidden">
+                    <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-espresso-900 hover:text-terracotta-600 transition">
+                        <span>Bagaimana panduan ukuran (size chart) pakaian Maisora Wear?</span>
+                        <i class="fa-solid fa-plus text-terracotta-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-sm text-espresso-800/80 leading-relaxed border-t border-cream-100 pt-3">
+                        Tersedia ukuran lengkap mulai dari <strong>S (LD 94 cm), M (LD 98 cm), L (LD 104 cm), XL (LD 110 cm), hingga XXL (LD 116 cm)</strong> dengan potongan <em>relaxed-fit</em> yang sopan dan tidak membentuk lekuk tubuh secara berlebihan. Jika ragu memilih ukuran, admin kami siap membantu merekomendasikan size terbaik berdasarkan tinggi dan berat badanmu.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-2xl border border-cream-200 overflow-hidden">
+                    <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-espresso-900 hover:text-terracotta-600 transition">
+                        <span>Dari mana pengiriman dilakukan dan berapa lama sampai ke kota saya?</span>
+                        <i class="fa-solid fa-plus text-terracotta-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-sm text-espresso-800/80 leading-relaxed border-t border-cream-100 pt-3">
+                        Seluruh pesanan dikirim langsung dari rumah produksi &amp; gudang kami di <strong>Bandar Lampung</strong> ke seluruh wilayah Indonesia. Estimasi pengiriman area Lampung 1–2 hari kerja, Jabodetabek &amp; Sumatera 2–3 hari kerja, serta Pulau Jawa dan wilayah lainnya 3–5 hari kerja. Tersedia juga layanan instan untuk area Bandar Lampung.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-2xl border border-cream-200 overflow-hidden">
+                    <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-espresso-900 hover:text-terracotta-600 transition">
+                        <span>Bagaimana cara merawat pakaian agar warna dan serat kain tetap awet bertahun-tahun?</span>
+                        <i class="fa-solid fa-plus text-terracotta-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-sm text-espresso-800/80 leading-relaxed border-t border-cream-100 pt-3">
+                        Cuci menggunakan deterjen lembut (hindari pemutih), balik bagian dalam pakaian saat menjemur di tempat teduh agar warna <em>earth-tone</em> tetap cerah, dan setrika dengan suhu sedang. Bahan kami dirancang anti-kusut sehingga sering kali cukup dirapikan dengan tangan setelah dijemur.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-2xl border border-cream-200 overflow-hidden">
+                    <button type="button" class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-bold text-espresso-900 hover:text-terracotta-600 transition">
+                        <span>Apakah bisa membayar di tempat (COD) atau transfer bank/e-wallet?</span>
+                        <i class="fa-solid fa-plus text-terracotta-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-5 text-sm text-espresso-800/80 leading-relaxed border-t border-cream-100 pt-3">
+                        Tentu! Kami mendukung pembayaran melalui Transfer Bank (BCA, Mandiri, BRI, BNI), QRIS, E-Wallet (GoPay, OVO, DANA, ShopeePay), serta layanan <strong>COD (Bayar di Tempat)</strong> untuk memudahkan pengalaman belanjamu.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. FOOTER -->
+    <footer class="bg-espresso-900 text-cream-200 pt-16 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-cream-50/15">
+                <!-- Brand Bio -->
+                <div class="space-y-4 lg:col-span-2">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-terracotta-500 text-white flex items-center justify-center font-serif text-2xl font-bold">
+                            M
+                        </div>
+                        <span class="font-serif text-2xl font-bold text-white">Maisora Wear</span>
+                    </div>
+                    <p class="text-sm text-cream-200/75 max-w-md leading-relaxed">
+                        Brand fashion lokal kebanggaan Bandar Lampung yang menghadirkan pakaian <em>versatile</em> berkualitas butik dengan harga terjangkau. Mengajak generasi muda tampil sopan, berwibawa, dan kreatif tanpa harus boros.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok Maisora Wear" class="w-10 h-10 rounded-full bg-white/10 hover:bg-terracotta-500 text-white flex items-center justify-center transition">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram Maisora Wear" class="w-10 h-10 rounded-full bg-white/10 hover:bg-terracotta-500 text-white flex items-center justify-center transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <button onclick="openOrderModal('Konsultasi Koleksi Maisora Wear', 'Tanya Admin')" aria-label="WhatsApp Maisora Wear" class="w-10 h-10 rounded-full bg-white/10 hover:bg-terracotta-500 text-white flex items-center justify-center transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Navigasi Cepat -->
+                <div>
+                    <h4 class="font-serif text-xl font-bold text-white mb-4">Navigasi</h4>
+                    <ul class="space-y-2.5 text-sm text-cream-200/75">
+                        <li><a href="#masalah" class="hover:text-terracotta-400 transition">Tentang &amp; Filosofi</a></li>
+                        <li><a href="#penawaran" class="hover:text-terracotta-400 transition">Keunggulan Bahan</a></li>
+                        <li><a href="#lookbook" class="hover:text-terracotta-400 transition">Lookbook Koleksi</a></li>
+                        <li><a href="#harga" class="hover:text-terracotta-400 transition">Paket &amp; Harga</a></li>
+                        <li><a href="#faq" class="hover:text-terracotta-400 transition">Pertanyaan Umum</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kontak & Jam Operasional -->
+                <div>
+                    <h4 class="font-serif text-xl font-bold text-white mb-4">Hubungi Kami</h4>
+                    <ul class="space-y-3 text-sm text-cream-200/75">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-terracotta-400 mt-1"></i>
+                            <span>Kota Bandar Lampung, Provinsi Lampung, Indonesia</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-regular fa-clock text-terracotta-400 mt-1"></i>
+                            <span>Senin – Sabtu: 08.00 – 20.00 WIB<br><span class="text-xs text-cream-200/50">Minggu &amp; Libur Nasional: Slow Response</span></span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-brands fa-whatsapp text-terracotta-400"></i>
+                            <span>+62 812-7890-4521 (Admin CS)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-cream-200/60 gap-4">
+                <p>&copy; 2026 Maisora Wear Bandar Lampung. Hak Cipta Dilindungi.</p>
+                <p>Mendukung Ekonomi Kreatif &amp; Mode Lokal Indonesia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE ORDER MODAL (Replaces alert/confirm with sleek UI) -->
+    <div id="order-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-espresso-900/70 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-cream-200 relative animate-[fadeIn_0.2s_ease-out]">
+            <button onclick="closeOrderModal()" aria-label="Tutup Form Pemesanan" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-cream-100 hover:bg-cream-200 text-espresso-900 flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <span class="text-xs font-bold uppercase tracking-wider text-terracotta-600">Formulir Pemesanan Cepat</span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-espresso-900 mt-1">Pesan Maisora Wear</h3>
+            <p class="text-xs sm:text-sm text-espresso-800/70 mt-1">Lengkapi data singkat di bawah untuk terhubung langsung ke WhatsApp admin kami.</p>
+
+            <form id="whatsapp-order-form" class="mt-5 space-y-4">
+                <div class="bg-cream-100 p-3.5 rounded-2xl border border-cream-200 flex items-center justify-between">
+                    <div>
+                        <p class="text-[11px] uppercase tracking-wider text-espresso-800/60 font-semibold">Pilihan Paket</p>
+                        <p id="modal-package-name" class="font-bold text-espresso-900 text-sm">Mix &amp; Match Set</p>
+                    </div>
+                    <span id="modal-package-price" class="font-serif text-xl font-bold text-terracotta-600">Rp 239.000</span>
+                </div>
+
+                <div>
+                    <label for="customer-name" class="block text-xs font-bold text-espresso-900 mb-1">Nama Lengkap</label>
+                    <input type="text" id="customer-name" required placeholder="Contoh: Bella Putri" class="w-full px-4 py-2.5 rounded-xl border border-cream-300 focus:outline-none focus:border-terracotta-500 text-sm">
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label for="customer-size" class="block text-xs font-bold text-espresso-900 mb-1">Ukuran</label>
+                        <select id="customer-size" class="w-full px-3.5 py-2.5 rounded-xl border border-cream-300 focus:outline-none focus:border-terracotta-500 text-sm bg-white">
+                            <option value="S">S (LD 94 cm)</option>
+                            <option value="M" selected>M (LD 98 cm)</option>
+                            <option value="L">L (LD 104 cm)</option>
+                            <option value="XL">XL (LD 110 cm)</option>
+                            <option value="XXL">XXL (LD 116 cm)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="customer-color" class="block text-xs font-bold text-espresso-900 mb-1">Nuansa Warna</label>
+                        <select id="customer-color" class="w-full px-3.5 py-2.5 rounded-xl border border-cream-300 focus:outline-none focus:border-terracotta-500 text-sm bg-white">
+                            <option value="Warm Cream">Warm Cream</option>
+                            <option value="Terracotta">Terracotta</option>
+                            <option value="Dusty Pink">Dusty Pink</option>
+                            <option value="Espresso Brown">Espresso Brown</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="customer-city" class="block text-xs font-bold text-espresso-900 mb-1">Kota Tujuan Pengiriman</label>
+                    <input type="text" id="customer-city" required placeholder="Contoh: Bandar Lampung / Jakarta" class="w-full px-4 py-2.5 rounded-xl border border-cream-300 focus:outline-none focus:border-terracotta-500 text-sm">
+                </div>
+
+                <button type="submit" class="w-full py-3.5 px-6 rounded-full bg-terracotta-500 hover:bg-terracotta-600 text-white font-bold text-sm shadow-lg shadow-terracotta-500/25 flex items-center justify-center gap-2 transition">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Lanjutkan ke WhatsApp</span>
+                </button>
+            </form>
+
+            <!-- Custom Notification Message Box -->
+            <div id="order-feedback" class="hidden mt-4 p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs leading-relaxed"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript Interactivity -->
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Video Showcase Interactive Player
+        function playShowcaseVideo() {
+            const poster = document.getElementById('video-poster');
+            const container = document.getElementById('video-embed-container');
+            const video = document.getElementById('fashion-video');
+
+            poster.classList.add('hidden');
+            container.classList.remove('hidden');
+            video.play().catch(() => {
+                // Fallback if autoplay blocked
+            });
+        }
+
+        // FAQ Accordion Logic
+        const faqButtons = document.querySelectorAll('.faq-btn');
+        faqButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+                const isOpen = !content.classList.contains('hidden');
+
+                // Close all other items for clean editorial UX
+                document.querySelectorAll('.faq-content').forEach(item => item.classList.add('hidden'));
+                document.querySelectorAll('.faq-btn i').forEach(ic => {
+                    ic.classList.remove('rotate-45');
+                });
+
+                if (!isOpen) {
+                    content.classList.remove('hidden');
+                    icon.classList.add('rotate-45');
+                }
+            });
+        });
+
+        // Order Modal Logic
+        const orderModal = document.getElementById('order-modal');
+        const modalPackageName = document.getElementById('modal-package-name');
+        const modalPackagePrice = document.getElementById('modal-package-price');
+        const orderFeedback = document.getElementById('order-feedback');
+
+        function openOrderModal(packageName, packagePrice) {
+            modalPackageName.textContent = packageName;
+            modalPackagePrice.textContent = packagePrice;
+            orderFeedback.classList.add('hidden');
+            orderModal.classList.remove('hidden');
+            orderModal.classList.add('flex');
+        }
+
+        function closeOrderModal() {
+            orderModal.classList.add('hidden');
+            orderModal.classList.remove('flex');
+        }
+
+        // Close modal when clicking backdrop
+        orderModal.addEventListener('click', (e) => {
+            if (e.target === orderModal) {
+                closeOrderModal();
+            }
+        });
+
+        // Handle Order Form Submission
+        document.getElementById('whatsapp-order-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('customer-name').value.trim();
+            const size = document.getElementById('customer-size').value;
+            const color = document.getElementById('customer-color').value;
+            const city = document.getElementById('customer-city').value.trim();
+            const pkg = modalPackageName.textContent;
+            const price = modalPackagePrice.textContent;
+
+            const message = `Halo Admin Maisora Wear Bandar Lampung! Saya ingin memesan:%0A%0A` +
+                `• *Paket:* ${encodeURIComponent(pkg)} (${encodeURIComponent(price)})%0A` +
+                `• *Nama:* ${encodeURIComponent(name)}%0A` +
+                `• *Ukuran:* ${encodeURIComponent(size)}%0A` +
+                `• *Warna:* ${encodeURIComponent(color)}%0A` +
+                `• *Kota Tujuan:* ${encodeURIComponent(city)}%0A%0A` +
+                `Mohon info ketersediaan stok & total ongkirnya ya kak. Terima kasih!`;
+
+            orderFeedback.innerHTML = `<strong>Pesanan siap dikirim!</strong> Mengarahkan ke WhatsApp Admin Maisora Wear...`;
+            orderFeedback.classList.remove('hidden');
+
+            const waUrl = `https://wa.me/6281278904521?text=${message}`;
+            window.open(waUrl, '_blank', 'noopener');
+        });
+    </script>
+</body>
+</html>
